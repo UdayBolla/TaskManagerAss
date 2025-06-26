@@ -40,7 +40,7 @@ class Add extends Component {
         };
 
         try {
-            const res = await fetch(`http://localhost:9000/tasks`, {
+            const res = await fetch(`https://taskmanagerass-backend6.onrender.com`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(taskDetails)
