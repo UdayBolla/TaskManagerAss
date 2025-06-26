@@ -8,7 +8,7 @@ const TaskDetails = ({ Details, onDeleteSuccess }) => { // Destructure onDeleteS
         // Prompt user for confirmation before deleting
         if (window.confirm(`Are you sure you want to delete task "${title}"? This action cannot be undone.`)) {
             try {
-                const response = await fetch(`http://localhost:9000/tasks/${id}`, {
+                const response = await fetch(`https://taskmanagerass-backend6.onrender.com`, {
                     method: 'DELETE',
                 });
 
