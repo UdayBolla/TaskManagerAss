@@ -16,7 +16,7 @@ class Update extends Component {
     componentDidMount() {
     const { id } = this.props.params;
 
-    fetch(`http://localhost:9000/tasks`)
+    fetch(`https://taskmanagerass-backend6.onrender.com`)
         .then(res => res.json())
         .then(tasks => {
             const task = tasks.find(task => task.id === id);
