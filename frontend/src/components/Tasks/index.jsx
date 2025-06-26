@@ -14,7 +14,7 @@ function Tasks() {
         setIsLoading(true);
         setError(null); // Clear previous errors
         try {
-            const response = await fetch('http://localhost:9000/tasks');
+            const response = await fetch('https://taskmanagerass-backend6.onrender.com');
             if (!response.ok) {
                 // Throw an error if the HTTP response status is not 2xx
                 throw new Error(`HTTP error! status: ${response.status}`);
