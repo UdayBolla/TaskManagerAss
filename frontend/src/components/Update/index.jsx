@@ -59,7 +59,7 @@ class Update extends Component {
 
 
         try {
-            const res = await fetch(`http://localhost:9000/tasks/${id}`, {
+            const res = await fetch(`https://taskmanagerass-backend6.onrender.com/tasks/${id}`, {
                 method: 'PUT', // Using PUT as per your backend
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(taskDetails)
